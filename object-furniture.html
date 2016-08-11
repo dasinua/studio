@@ -83,7 +83,7 @@
 				<!-- row1 -->
 				<div class="row da-object-furniture__row1">
 					<div class="col-sm-4">
-						<a class="da-object-furniture__link-order" href="#">
+						<a href="#daButtonModal" class="da-object-furniture__link-order" data-toggle="modal" >
 
 							<div class="da-object-furniture__item animated boxHidded delay-03s">
 
@@ -311,6 +311,55 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
     <script src="js/script.min.js"></script>
+
+<!-- modal -->
+
+		<div id="daButtonModal" class="modal fade" tabindex="-1">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-body">
+				<!-- <button type="button" class="close da-modal__close" data-dismiss="modal" aria-hidden="true"><img src="img/modal-close.png" alt="modal-close.png"></button> -->
+						<div class="da-modal">
+
+								<h2 class="da-modal__title">
+									ОСТАВЬТЕ заявку на заказ мебели, И МЫ СВЯЖЕМСЯ С ВАМИ
+								</h2>
+								<!-- form -->
+								<form id="daOrder">
+								<div class="row">
+									<div class="col-md-4">
+										<div class="row">
+											<div class="col-md-12">
+												<input type="text" name="name"  placeholder="Ваше имя*" required>
+										    </div>
+										    <div class="col-md-12">
+												<input type="tel" name="phone"  placeholder="Ваш номер телефона*" required>
+										    </div>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="row">
+											<div class="col-md-12">
+												<input type="email" name="email"  placeholder="Ваш e-mail" >
+										    </div>
+										    <div class="col-md-12">
+												<input type="text" name="coment"  placeholder="Сообщение*" required>
+										    </div>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<button class="da-modal__button" type="submit">ОТПРАВИТЬ</button>
+									</div>
+								</div>
+
+								</form>
+								<!-- /form -->
+						</div>
+		          </div>
+			   </div>
+		    </div>
+		</div>
+	<!-- /modal -->
 
 </body>
 </html>
